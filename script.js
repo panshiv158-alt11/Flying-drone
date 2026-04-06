@@ -392,7 +392,9 @@ function submitRegistration(event) {
 
       // Show success message
       alert(
-        "✅ Registration submitted successfully!\n\nWe will contact you soon with more details.",
+        "✅ Registration submitted successfully!\n\nOur Student Counselor will get in touch with you shortly between 10.30am to 5.30pm. 
+
+Thank you for Patronage!",
       );
 
       // Reset form
