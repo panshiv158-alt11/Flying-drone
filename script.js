@@ -392,8 +392,8 @@ function submitRegistration(event) {
 
       // Show success message
       alert(
-        "✅ Registration submitted successfully!\n\nYour data is now saved in our registration system.\n\nCamp Details:\n📅 20-24 April 2026\n📍 Eklavya School, Kothrud, Pune\n💰 ₹100 (Payable at venue)\n\n📧 Email confirmation will be sent to: " +
-          emailValue +
+        "✅ Registration submitted successfully!\n\nYour data is now saved in our registration system.\n\nCamp Details:\n📅 20-24 April 2026\n📍 Eklavya Sparklebots Robotics Centre, Kothrud, Pune\n💰 : " +
+        +
           "\n\nWe will contact you soon with more details.",
       );
 
