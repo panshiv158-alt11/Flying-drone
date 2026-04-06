@@ -392,9 +392,8 @@ function submitRegistration(event) {
 
       // Show success message
       alert(
-        "✅ Registration submitted successfully!\n\nYour data is now saved in our registration system.\n\nCamp Details:\n📅 20-24 April 2026\n📍 Eklavya Sparklebots Robotics Centre, Kothrud, Pune\n we will contact you soon  : " +
-        +
-          " We will contact you soon with more details.",
+        "✅ Registration submitted successfully!\n\n\nCamp Details:\n📅 20-24 April 2026\n📍 Eklavya Sparklebots Robotics Centre, Kothrud, Pune\n We will contact you soon ." , 
+       ,
       );
 
       // Reset form
