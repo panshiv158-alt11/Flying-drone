@@ -392,8 +392,7 @@ function submitRegistration(event) {
 
       // Show success message
       alert(
-        "✅ Registration submitted successfully!\n\n\nCamp Details:\n📅 20-24 April 2026\n📍 Eklavya Sparklebots Robotics Centre, Kothrud, Pune\n We will contact you soon ." , 
-       ,
+        "✅ Registration submitted successfully!\n\nWe will contact you soon with more details.",
       );
 
       // Reset form
