@@ -209,6 +209,32 @@
               </a>
             </div>
           </div>
+          <!-- Payment Done -->
+          <div class="form-group">
+            <label for="payment" style="display: block; margin-bottom: 0.8rem; font-weight: 600; color: var(--golden)">💳 Payment Done? *</label>
+            <div style="display: flex; gap: 2rem; align-items: center">
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer">
+                <input
+                  type="radio"
+                  id="paymentYes"
+                  name="payment"
+                  value="Yes"
+                  style="width: auto; cursor: pointer"
+                  required />
+                <span>✅ Yes, I have paid ₹500</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer">
+                <input
+                  type="radio"
+                  id="paymentNo"
+                  name="payment"
+                  value="No"
+                  style="width: auto; cursor: pointer"
+                  required />
+                <span>❌ No, I haven't paid yet</span>
+              </label>
+            </div>
+          </div>
 
           <!-- Terms & Conditions -->
           <div class="form-group">
