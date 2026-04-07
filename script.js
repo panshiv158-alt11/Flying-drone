@@ -181,6 +181,7 @@ function validateForm(formId) {
   const email = form.querySelector('[name="email"]');
   const phone = form.querySelector('[name="phone"]');
   const age = form.querySelector('[name="age"]');
+  const payment = form.querySelector('input[name="payment"]:checked');
 
   if (name && name.value.trim() === "") {
     alert("Please enter your name");
@@ -199,6 +200,11 @@ function validateForm(formId) {
 
   if (age && age.value === "") {
     alert("Please select your age");
+    return false;
+  }
+
+  if (!payment) {
+    alert("Please confirm your payment status");
     return false;
   }
 
@@ -343,6 +349,8 @@ function submitRegistration(event) {
   const guardianValue = document.getElementById("guardian").value.trim();
   const batchValue = document.getElementById("batch").value;
   const schoolValue = document.getElementById("school").value.trim();
+  const paymentValue =
+    document.querySelector('input[name="payment"]:checked')?.value || "";
 
   // Log submission data for debugging
   const submissionData = {
@@ -354,6 +362,7 @@ function submitRegistration(event) {
     guardian: guardianValue,
     batch: batchValue,
     school: schoolValue,
+    payment: paymentValue,
   };
 
   console.log("📤 Submitting registration:", submissionData);
@@ -367,6 +376,7 @@ function submitRegistration(event) {
     "entry.637270378": guardianValue,
     "entry.1304502194": batchValue,
     "entry.926845933": schoolValue,
+    "entry.1545736523": paymentValue,
   });
 
   // Also save to localStorage for verification
@@ -404,7 +414,7 @@ function submitRegistration(event) {
     .catch((error) => {
       console.warn("⚠️ Form error (expected for no-cors):", error);
       alert(
-        "✅ Registration submitted successfully!\n\nThank you for registering!",
+        "✅ Registration submitted successfully!\n\nOur Student Counselor will get in touch with you shortly between 10.30am to 5.30pm.\n\nThank you for Patronage!",
       );
       document.getElementById("registrationForm").reset();
     });
