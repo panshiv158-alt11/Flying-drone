@@ -477,9 +477,16 @@ window.addEventListener("scroll", function () {
 
 // ============ GET DIRECTIONS TO VENUE ============
 function getDirections() {
-  // Eklavya School Pune - DP Road, Kothrud
-  const venueName =
-    "Eklavya School, DP Road, Kothrud, Pune, Maharashtra 411038";
+  // Show venue selection options
+  const venueChoice = confirm("Click OK for Immanuel Mar Thoma School\nClick Cancel for Kothrud Camp (Sparklebots Center)");
+  
+  let venueName;
+  if (venueChoice) {
+    venueName = "Immanuel Mar Thoma School, Pune, Maharashtra";
+  } else {
+    venueName = "Eklavya Sparklebots Robotics Centre, DP Road, Kothrud, Pune, Maharashtra 411038";
+  }
+  
   const googleMapsURL = `https://www.google.com/maps/search/${encodeURIComponent(venueName)}`;
   window.open(googleMapsURL, "_blank");
 }

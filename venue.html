@@ -50,8 +50,42 @@
     <!-- Main Content -->
     <section class="page-section">
       <div class="page-header">
-        <h1 class="page-title">📍 Camp Venue</h1>
-        <p class="page-subtitle">Where the Magic Happens!</p>
+        <h1 class="page-title">📍 Camp Venues</h1>
+        <p class="page-subtitle">Two Locations - Same Great Experience!</p>
+      </div>
+
+      <!-- Two Venue Cards -->
+      <div class="info-section" style="background: linear-gradient(135deg, rgba(0,234,255,0.1), rgba(255,0,255,0.1)); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+        <h2 style="text-align: center; color: var(--neon-blue); margin-bottom: 1.5rem;">🏕️ Choose Your Preferred Location</h2>
+        <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+          We have two venues to serve you better. Select the one that's most convenient for you.
+        </p>
+        
+        <div class="events-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+          <!-- Immanuel Mar Thoma School -->
+          <div class="event-card" style="border: 2px solid #00eaff; box-shadow: 0 0 20px rgba(0,234,255,0.3);">
+            <h3 style="color: var(--neon-blue); font-size: 1.3rem;">🏫 Immanuel Mar Thoma School</h3>
+            <div style="margin: 1rem 0;">
+              <p><strong>📍 Address:</strong> Immanuel Mar Thoma School, Pune</p>
+              <p><strong>⏰ Batch Time:</strong> 9:30 AM - 11:30 AM</p>
+              <p><strong>📅 Dates:</strong> 4th May - 8th May 2026</p>
+              <p><strong>🅿️ Parking:</strong> Available on campus</p>
+            </div>
+            <button onclick="window.open('https://www.google.com/maps/search/Immanuel+Mar+Thoma+School+Pune', '_blank')" class="btn btn-primary" style="margin-top: 1rem; display: block; text-align: center;">🗺️ Get Directions</button>
+          </div>
+
+          <!-- Kothrud Camp -->
+          <div class="event-card" style="border: 2px solid #ff00ff; box-shadow: 0 0 20px rgba(255,0,255,0.3);">
+            <h3 style="color: var(--neon-pink); font-size: 1.3rem;">🎯 Kothrud Camp </h3>
+            <div style="margin: 1rem 0;">
+              <p><strong>📍 Address:</strong> Eklavya Sparklebots Robotics Centre, Kothrud, Pune</p>
+              <p><strong>⏰ Batch Time:</strong> 4:00 PM - 6:00 PM</p>
+              <p><strong>📅 Dates:</strong> 4th May - 8th May 2026</p>
+              <p><strong>🅿️ Parking:</strong> Available on campus</p>
+            </div>
+            <button onclick="window.open('https://www.google.com/maps/search/Sparklebots+Robotics+Innovation+and+Research+Labs,+Narmada+Heights,+DP+Rd,+Gananjay+Society,+Guruganesh+Nagar,+Kothrud,+Pune,+Maharashtra+411038', '_blank')" class="btn btn-secondary" style="margin-top: 1rem; display: block; text-align: center;">🗺️ Get Directions</button>
+          </div>
+        </div>
       </div>
 
       <!-- Venue Info Cards -->
@@ -87,16 +121,37 @@
 
       <!-- Complete Address -->
       <div class="info-section">
-        <h3>📮 Complete Address</h3>
-        <p style="font-size: 1.1rem; line-height: 2">
-          <strong
-            >Immanuel Mar Thoma School (Pune)</strong
-          ><br />
-         
-        </p>
+        <h3>📮 Complete Address - Both Venues</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+          <div style="padding: 1.5rem; background: rgba(0,234,255,0.1); border-radius: 10px; border-left: 4px solid #00eaff;">
+            <h4 style="color: var(--neon-blue); margin-bottom: 1rem;">🏫 Immanuel Mar Thoma School</h4>
+            <p style="font-size: 1.1rem; line-height: 2">
+              <strong>Immanuel Mar Thoma School</strong><br />
+              Pune, Maharashtra<br />
+            </p>
+            <p style="margin-top: 1rem;">
+              <strong>⏰ Morning Batch:</strong> 9:30 AM - 11:30 AM<br />
+              <strong>📅 Dates:</strong> 4th May - 8th May 2026
+            </p>
+          </div>
+          
+          <div style="padding: 1.5rem; background: rgba(255,0,255,0.1); border-radius: 10px; border-left: 4px solid #ff00ff;">
+            <h4 style="color: var(--neon-pink); margin-bottom: 1rem;">🎯 Kothrud Camp</h4>
+            <p style="font-size: 1.1rem; line-height: 2">
+              <strong>Eklavya Sparklebots Robotics Centre</strong><br />
+              DP Road, Kothrud<br />
+              Pune, Maharashtra<br />
+            </p>
+            <p style="margin-top: 1rem;">
+              <strong>⏰ Evening Batch:</strong> 4:00 PM - 6:00 PM<br />
+              <strong>📅 Dates:</strong> 4th May - 8th May 2026
+            </p>
+          </div>
+        </div>
+        
         <p style="margin-top: 1.5rem">
-          <strong>📞 Contact for Directions:</strong> Available during
-          registration
+          <strong>📞 Contact for Directions:</strong> Available during registration
         </p>
         <div
           style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap">
@@ -375,7 +430,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <p><strong>📅 Duration:</strong> 5 Days (20-24 April 2026)</p>
+          <p><strong>📅 Duration:</strong> 5 Days (4th-8th May 2026)</p>
           <p>
             Intensive hands-on training program for young drone enthusiasts.
           </p>

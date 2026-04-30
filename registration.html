@@ -130,12 +130,11 @@
 
           <!-- Batch Selection -->
           <div class="form-group">
-            <label for="batch">⏰ Preferred Batch *</label>
-            <select id="batch" name="batch" required>
+            <label for="batch">⏰ Preferred Batch & Venue *</label>
+            <select id="batch" name="batch" required onchange="updateVenueInfo(this.value)">
               <option value="">Select your preferred batch</option>
-              <option value="B1">B1: 12:30 PM - 3:00 PM</option>
-              
-              
+              <option value="B1">🏫 Immanuel Mar Thoma School - 9:30 AM to 11:30 AM</option>
+              <option value="B2">🎯 Kothrud Camp (Sparklebots) - 4:00 PM to 6:00 PM</option>
             </select>
           </div>
 
@@ -164,9 +163,15 @@
             <h4 style="color: var(--golden); margin-bottom: 1rem">
               📋 Camp Information
             </h4>
-            <p>📅 <strong>Dates:</strong> 27-30 April 2026</p>
-            <p>⏱️ <strong>Duration:</strong> 2 Hours per Day (4 Days)</p>
-            <p>📍 <strong>Venue:</strong> Immanuel Mar Thoma School (Pune)</p>
+            <p>📅 <strong>Dates:</strong> 4th May - 8th May 2026</p>
+            <p>⏱️ <strong>Duration:</strong> 2 Hours per Day (5 Days)</p>
+            
+            <div id="venueInfo" style="margin: 1rem 0; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+              <p style="margin: 0.5rem 0;"><strong>📍 Venue Options:</strong></p>
+              <p style="margin: 0.5rem 0; color: #00eaff;">🏫 <strong>Immanuel Mar Thoma School:</strong> 9:30 AM - 11:30 AM</p>
+              <p style="margin: 0.5rem 0; color: #ff00ff;">🎯 <strong>Kothrud Camp:</strong> 4:00 PM - 6:00 PM</p>
+            </div>
+            
             <p>👥 <strong>Age Group:</strong> 8-16 Years</p>
             <div style="background: rgba(255, 215, 0, 0.15); padding: 1rem; border-radius: 8px; margin-top: 1rem; border-left: 4px solid var(--golden);">
               <p style="margin: 0.5rem 0; color: var(--golden); font-weight: 600;">💰 Registration Fee Information</p>
@@ -393,7 +398,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <p><strong>📅 Duration:</strong> 5 Days (20-24 April 2026)</p>
+          <p><strong>📅 Duration:</strong> 5 Days (4th-8th May 2026)</p>
           <p>
             Intensive hands-on training program for young drone enthusiasts.
           </p>
