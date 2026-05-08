@@ -477,15 +477,8 @@ window.addEventListener("scroll", function () {
 
 // ============ GET DIRECTIONS TO VENUE ============
 function getDirections() {
-  // Show venue selection options
-  const venueChoice = confirm("Click OK for Immanuel Mar Thoma School\nClick Cancel for Kothrud Camp (Sparklebots Center)");
-  
-  let venueName;
-  if (venueChoice) {
-    venueName = "Immanuel Mar Thoma School, Pune, Maharashtra";
-  } else {
-    venueName = "Eklavya Sparklebots Robotics Centre, DP Road, Kothrud, Pune, Maharashtra 411038";
-  }
+  // Kothrud Camp venue
+  const venueName = "Bal Shikshan Mandir English Medium School, Kothrud, Pune, Maharashtra";
   
   const googleMapsURL = `https://www.google.com/maps/search/${encodeURIComponent(venueName)}`;
   window.open(googleMapsURL, "_blank");
